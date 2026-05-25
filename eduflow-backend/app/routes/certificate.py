@@ -65,7 +65,7 @@ def download_certificate(
     ).first()
 
     verification_link = (
-        f"http://127.0.0.1:8000/certificates/verify/"
+        f"https://eduflow-backend-ezcl.onrender.com/certificates/verify/"
         f"{certificate.certificate_code}"
     )
 

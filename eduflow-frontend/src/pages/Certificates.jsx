@@ -52,7 +52,7 @@ export default function Certificates() {
                       const token = localStorage.getItem("token");
 
                       window.open(
-                        `http://127.0.0.1:8000/certificates/download/${cert.id}?token=${token}`,
+                        `https://eduflow-backend-ezcl.onrender.com/certificates/download/${cert.id}?token=${token}`,
                         "_blank",
                       );
                     }}
@@ -62,7 +62,7 @@ export default function Certificates() {
                   </button>
 
                   <a
-                    href={`http://127.0.0.1:8000/certificates/verify/${cert.certificate_code}`}
+                    href={`https://eduflow-backend-ezcl.onrender.com/certificates/verify/${cert.certificate_code}`}
                     target="_blank"
                     rel="noreferrer"
                     style={styles.verifyBtn}
