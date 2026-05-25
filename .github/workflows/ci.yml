@@ -36,6 +36,7 @@ jobs:
 
     env:
       DATABASE_URL: mysql+pymysql://root:root@127.0.0.1:3306/testdb
+      MAIL_PORT: 587
 
     steps:
 
@@ -78,6 +79,11 @@ jobs:
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+
+      - name: Start frontend server
+        run: |
+          npm run dev &
+          sleep 15
 
       - name: Run Playwright Tests
         run: npx playwright test
