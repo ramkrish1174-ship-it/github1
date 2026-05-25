@@ -41,6 +41,8 @@ jobs:
       MAIL_FROM: test@gmail.com
       MAIL_SERVER: smtp.gmail.com
       MAIL_PORT: 587
+      SECRET_KEY: 8f3d9a2c7e4b1f6a9c0d2e5f7g8h1j3k
+      ALGORITHM: HS256
 
     steps:
 
