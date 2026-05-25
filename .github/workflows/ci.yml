@@ -36,6 +36,10 @@ jobs:
 
     env:
       DATABASE_URL: mysql+pymysql://root:root@127.0.0.1:3306/testdb
+      MAIL_USERNAME: test@gmail.com
+      MAIL_PASSWORD: testpassword
+      MAIL_FROM: test@gmail.com
+      MAIL_SERVER: smtp.gmail.com
       MAIL_PORT: 587
 
     steps:
